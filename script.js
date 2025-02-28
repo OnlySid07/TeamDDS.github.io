@@ -19,16 +19,22 @@ function mostrarProductos(){
 });
 }
 
+function agregarCarrito (id){
+
+}
+
+
+
+
+
+
 // Es para mostrar mi lista de compras
 
 function actualizarCarrito(){
-    const contenedor = document.getElementById("products");
-    productos.forEach(producto => {
-    let div = document.createElement("div");
-    div.classList.add("product");
-    div.innerHTML = '<h3>' + producto.nombre + '</h3>' + 
-    '<p>' + producto.precio + '</p>';
-    contenedor.appendChild(div);
+    const listaCarrito = document.getElementById("listaCarrito");
+    const totalElmento = document.getElementById("total")
 
-});
+    listaCarrito.innerHTML = '';
+
+    let total = 0; 
 }
